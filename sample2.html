@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>innerHTML</title>
+    <script type="text/javascript">
+      function changeAnchor(){
+        m_id_test = document.getElementById("id_test");
+        m_id_test.innerHTML = "바뀜";
+      }
+    </script>
+  </head>
+  <body>
+    <a id="id_test">바뀌기전</a>
+    <input type="button" value="변경버튼" onclick="changeAnchor();"/>
+  </body>
+</html>

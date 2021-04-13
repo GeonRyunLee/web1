@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script type="text/javascript">
+  var a = 0;
+    function changeAnchor(){
+      var apple_id = document.getElementById('apple_cnt');
+      if (a>0) {
+        a -= 1;
+      }
+      
+      apple_id.innerHTML = a;
+    }
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>건륜이의 과일가게</title>
+  </head>
+  <body>
+    <div class="image">
+      <center>
+        <img src="image/apple.jpg" width="100px">
+        <span>&nbsp</span>
+        <img src="image/mango.jpg" width="100px">
+        <span>&nbsp</span>
+        <img src="image/strawberry.jpg" width="100px">
+        <span>&nbsp</span>
+        </center>
+    </div>
+    <div class="button">
+      <center>
+        <input type="button" id="minus" value="-" onclick="changeAnchor();"/>
+        <span>&nbsp</span>
+        <a id= "apple_cnt"> 0 </a>
+        <span>&nbsp</span>
+        <input type="button" name="plus" value="+"/>
+        <span>&nbsp</span>
+        <input type="button" name="minus" value="-"/>
+        <span>&nbsp</span>
+        0
+        <span>&nbsp</span>
+        <input type="button" name="plus" value="+"/>
+        <span>&nbsp</span>
+        <input type="button" name="minus" value="-"/>
+        <span>&nbsp</span>
+        0
+        <span>&nbsp</span>
+        <input type="button" name="plus" value="+"/>
+        <span>&nbsp</span>
+        </center>
+    </div>
+
+  </body>
+</html>
